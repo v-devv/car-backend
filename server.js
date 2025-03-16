@@ -12,7 +12,7 @@ const carBookingRoutes = require("./routes/carBookingRoutes");
 
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/Car-rental-system");
+    await mongoose.connect("mongodb+srv://arjundev0125:0125@cluster0.kqltq.mongodb.net/");
     console.log("Connected to Database of MongoDB");
   } catch (err) {
     console.log(err.message);
